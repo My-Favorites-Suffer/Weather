@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li style="float: right">Home</li>
+        <li style="float: right">News</li>
+        <li style="float: right">Weather</li>
+        <li style="float: right">About</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Tooele Utah</h3>
+                  <p>Currently: <span id="current-desc">Sunny</span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp">35</span> °F
+                  </p>
+                  <p>
+                    Wind Chill:
+                    <span id="current-windChill">Feels like: 36</span> °F
+                  </p>
+                  <p>Humidity: <span id="current-humid">72</span>%</p>
+                  <p>Wind Speed: <span id="current-windSpeed">2</span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="Sunny.jpg" alt="Sunny" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Tooele Utah</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head"></span>
+                    <img
+                      id="weatherIcon1"
+                      class="weatherIcon"
+                      src="partlyCloudy.jpg"
+                    />
+                    <span class="temp-data">
+                      <span id="data1"></span>
+                      <span>37 °F</span>
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head"></span>
+                    <img
+                      id="weatherIcon2"
+                      class="weatherIcon"
+                      src="overcast.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data2"></span>
+                      <span>36°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head"></span>
+                    <img
+                      id="weatherIcon3"
+                      class="weatherIcon"
+                      src="snowy.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data3"></span>
+                      <span>34°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head"></span>
+                    <img
+                      id="weatherIcon4"
+                      class="weatherIcon"
+                      src="snowy.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data4"></span>
+                      <span>36°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head"></span>
+                    <img
+                      id="weatherIcon5"
+                      class="weatherIcon"
+                      src="snowy.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data5"></span>
+                      <span>36°F</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer></footer>
+  </body>
+</html>
